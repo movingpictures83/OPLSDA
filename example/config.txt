@@ -1,0 +1,2 @@
+Prefix plugins/OPLSDA/example/
+Plugin OPLSDA inputfile parameters.oplsda.txt outputfile OPLSDA.pdf
