@@ -26,6 +26,6 @@ output <- function(outputfile) {
    d_normalized <- readRDS(paste(pfix, parameters["data", 2], sep="/"))
 mvaresults = mva(d_normalized, method = "OPLS-DA", group_col = groupcol, groups=groups)
 plot_mva(mvaresults, color_by="group")
-
+write.csv(mvaresults$scores, paste(outputfile,"csv",sep="."))
 }
 
